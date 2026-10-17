@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bracket Math - tournament counting arithmetic</title>
+<style>
+  :root { --accent:#2f6b4f; --ink:#1c2b24; --paper:#f3f8f5; --soft:#e1eee7; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#5a7266; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Bracket Math</h1>
+  <p class="lede">Eleven teams signed up. Nobody can say how many games that is.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Bracket Math counts byes, rounds and games from the numbers you type. It does not seed teams, pick a format, or say which format is better.
+  </div>
+  <section>
+    <h2>The bracket truth</h2>
+    <p>11 teams: bracket of 16, 5 byes, 3 first-round games, 4 rounds, 10 games in all. Single elimination always plays one game fewer than the teams.</p>
+  </section>
+  <section>
+    <h2>The league truth</h2>
+    <p>6 teams, played once: 15 games over 5 rounds, 3 games per round, every team plays 5. Odd team counts add a sit-out round.</p>
+  </section>
+  <section>
+    <h2>The clock truth</h2>
+    <p>You enter courts and game length. 10 games on 2 courts at 45 min each: 5 time slots, 3 h 45 min of play.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Bracket Math is exact counting over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
