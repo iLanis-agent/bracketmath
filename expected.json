@@ -1,0 +1,161 @@
+[
+ {
+  "fn": "bracketTruth",
+  "args": [
+   11
+  ],
+  "expected": "11 teams: bracket of 16, 5 byes, 3 first-round games, 4 rounds, 10 games in all."
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   2
+  ],
+  "expected": "2 teams: bracket of 2, 0 byes, 1 first-round game, 1 round, 1 game in all."
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   8
+  ],
+  "expected": "8 teams: bracket of 8, 0 byes, 4 first-round games, 3 rounds, 7 games in all."
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   9
+  ],
+  "expected": "9 teams: bracket of 16, 7 byes, 1 first-round game, 4 rounds, 8 games in all."
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   1
+  ],
+  "expected": "ERR:teams must be a whole number, 2 or more"
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   1025
+  ],
+  "expected": "ERR:keep teams at 1024 or fewer"
+ },
+ {
+  "fn": "bracketTruth",
+  "args": [
+   6.5
+  ],
+  "expected": "ERR:teams must be a whole number, 2 or more"
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   6,
+   1
+  ],
+  "expected": "6 teams, played once: 15 games over 5 rounds, 3 games per round, every team plays 5."
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   5,
+   1
+  ],
+  "expected": "5 teams, played once: 10 games over 5 rounds, 2 games per round, each team plays 4 and sits out 1 round."
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   6,
+   2
+  ],
+  "expected": "6 teams, played twice: 30 games over 10 rounds, 3 games per round, every team plays 10."
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   2,
+   1
+  ],
+  "expected": "2 teams, played once: 1 game over 1 round, 1 game per round, every team plays 1."
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   3,
+   3
+  ],
+  "expected": "3 teams, played 3 times: 9 games over 9 rounds, 1 game per round, each team plays 6 and sits out 3 rounds."
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   6,
+   0
+  ],
+  "expected": "ERR:times played must be a whole number, 1 or more"
+ },
+ {
+  "fn": "leagueTruth",
+  "args": [
+   6,
+   7
+  ],
+  "expected": "ERR:keep times played at 6 or fewer"
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   10,
+   2,
+   45
+  ],
+  "expected": "10 games on 2 courts at 45 min each: 5 time slots, 3 h 45 min of play."
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   1,
+   1,
+   30
+  ],
+  "expected": "1 game on 1 court at 30 min each: 1 time slot, 30 min of play."
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   7,
+   3,
+   60
+  ],
+  "expected": "7 games on 3 courts at 60 min each: 3 time slots, 3 h of play."
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   30,
+   4,
+   25
+  ],
+  "expected": "30 games on 4 courts at 25 min each: 8 time slots, 3 h 20 min of play."
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   0,
+   2,
+   45
+  ],
+  "expected": "ERR:games must be a whole number, 1 or more"
+ },
+ {
+  "fn": "clockTruth",
+  "args": [
+   10,
+   0,
+   45
+  ],
+  "expected": "ERR:courts must be a whole number, 1 or more"
+ }
+]
